@@ -1,0 +1,17 @@
+plugins {
+	id 'java'
+	id 'idea'
+	id 'java-gradle-plugin'
+}
+
+group 'org.example'
+version '1.0'
+
+gradlePlugin {
+	plugins {
+		examplePlugin {
+			id = "${group}.example"
+			implementationClass = "${id}.Entrypoint"
+		}
+	}
+}

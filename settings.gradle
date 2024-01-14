@@ -1,0 +1,9 @@
+pluginManagement {
+    includeBuild('workspace') {
+        name = 'exampleplugin'
+    }
+}
+
+rootProject.name = 'devenv'
+
+include 'test_area'
